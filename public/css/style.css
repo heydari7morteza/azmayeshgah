@@ -1,0 +1,297 @@
+.content-wrapper {
+    min-height: 94vh;
+}
+
+.project-map .col-wrapper {
+    min-height: 190px;
+    border: 2px solid #777;
+    border-radius: 25px;
+    position: relative;
+}
+
+.project-map .col-wrapper.two-col {
+    flex-wrap: wrap;
+}
+
+.project-map .col-wrapper.two-col .entity {
+    flex: 0 0 100%;
+    text-align: center;
+}
+
+.project-map .col-wrapper.two-col .add-liquids {
+    flex: 0 0 100%;
+    text-align: center;
+}
+
+.project-map .col-wrapper .btn-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.project-map .col-wrapper .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: #777;
+    border: 2px solid #777;
+    border-radius: 25px;
+    transition: 0.3s;
+    display: flex;
+}
+
+.project-map .col-wrapper .fa {
+    font-size: 35px;
+    color: #fff;
+}
+
+.project-map .col-wrapper:hover .overlay {
+    opacity: 1;
+}
+
+
+.project-map .add-liquid-modal .modal-body{
+    position: relative;
+}
+
+.project-map .add-liquid-modal .modal-body .liquids-wrapper {
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    padding: 25px;
+    right: 0;
+    z-index: 2;
+    display: none;
+}
+
+.project-map .add-liquid-modal .circle {
+    border: 2px solid #000;
+    border-radius: 50%;
+    min-height: 25px;
+    min-width: 25px;
+    cursor: pointer;
+}
+
+.project-map .add-liquid-modal .col-2 > .circle {
+    min-height: 58px;
+    min-width: 58px;
+}
+
+.project-map .add-liquid-modal .col-3 > .circle {
+    min-height: 95px;
+    min-width: 95px;
+}
+
+.project-map .add-liquid-modal .col-4 > .circle {
+    min-height: 131px;
+    min-width: 131px;
+}
+
+.project-map .add-liquid-modal .col-6 > .circle {
+    min-height: 205px;
+    min-width: 205px;
+}
+
+.project-map .add-modal .col-2 > .circle {
+    min-height: 58px;
+    min-width: 58px;
+}
+
+.project-map .add-modal .col-3 > .circle {
+    min-height: 95px;
+    min-width: 95px;
+}
+
+.project-map .add-modal .col-4 > .circle {
+    min-height: 131px;
+    min-width: 131px;
+}
+
+.project-map .add-modal .col-6 > .circle {
+    min-height: 205px;
+    min-width: 205px;
+}
+
+.project-map .add-liquid-modal .circle:hover {
+    background-color: #2670ac;
+    border-color: #1c3b74;
+}
+
+.project-map .add-liquid-modal .circle.selected {
+    background-color: #26ac42;
+    border-color:#1c7430;
+}
+
+.project-map .add-liquid-modal .circle.selecting {
+    background-color: #2670ac;
+    border-color: #1c3b74;
+}
+
+.project-map .add-liquid-modal p {
+    margin-bottom: 0px !important;
+}
+
+
+.connected-sortable {
+    margin: 0 auto;
+    list-style: none;
+    width: 100%;
+    padding: 20px;
+}
+
+li.draggable-item {
+    width: inherit;
+    padding: 15px 20px;
+    background-color: #343a40;
+    border: 1px solid #c2c7d0;
+    border-radius: 5px;
+    margin-top: 5px;
+    -webkit-transition: transform .25s ease-in-out;
+    -moz-transition: transform .25s ease-in-out;
+    -o-transition: transform .25s ease-in-out;
+    transition: transform .25s ease-in-out;
+
+    -webkit-transition: box-shadow .25s ease-in-out;
+    -moz-transition: box-shadow .25s ease-in-out;
+    -o-transition: box-shadow .25s ease-in-out;
+    transition: box-shadow .25s ease-in-out;
+}
+li.draggable-item:hover {
+     cursor: pointer;
+     background-color: rgb(35, 37, 40);
+ }
+
+/* styles during drag */
+li.draggable-item.ui-sortable-helper {
+    background-color: rgb(35, 37, 40);;
+    -webkit-box-shadow: 0 0 8px rgba(53,41,41, .8);
+    -moz-box-shadow: 0 0 8px rgba(53,41,41, .8);
+    box-shadow: 0 0 8px rgba(53,41,41, .8);
+    transform: scale(1.015);
+    z-index: 100;
+}
+li.draggable-item.ui-sortable-placeholder {
+    background-color: #ddd;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+}
+
+.control-sidebar {
+    z-index: initial;
+}
+
+.control-sidebar-dark .modal {
+    text-align: right !important;
+}
+
+.control-sidebar-dark .modal label , .control-sidebar-dark .modal h5 {
+    text-align: right !important;
+    color: #212529 ;
+}
+
+.add-protocol {
+    position: absolute;
+    top: 57px;
+    right: 250px;
+    left: 250px;
+    padding: 30px;
+    background-color: #fff;
+    display: none;
+}
+
+.add-protocol .form-control {
+    width: initial;
+    display: inline-block;
+}
+
+/*.add-protocol .btn-add-entity{*/
+/*    display: none;*/
+/*}*/
+
+
+.add-protocol .source .circle {
+    border: 2px solid #000;
+    border-radius: 50%;
+    min-height: 25px;
+    min-width: 25px;
+    cursor: pointer;
+}
+
+.add-protocol .source .circle:hover {
+    background-color: #2670ac;
+    border-color: #1c3b74;
+}
+
+.add-protocol .source .circle.selected {
+    background-color: #26ac42;
+    border-color: #1c7430;
+}
+
+.add-protocol .source .circle.source-selected {
+    background-color: #2670ac;
+    border-color: #1c3b74;
+    cursor: pointer;
+}
+
+
+.add-protocol .source .circle.selected:hover{
+    background-color: #2670ac;
+    border-color: #1c3b74;
+}
+
+.add-protocol .source .circle.selected.source-selected{
+    background-color: #2670ac;
+    border-color: #1c3b74;
+}
+
+.add-protocol .target .circle {
+    border: 2px solid #000;
+    border-radius: 50%;
+    min-height: 25px;
+    min-width: 25px;
+    cursor: pointer;
+}
+
+.add-protocol .target .circle:hover {
+    background-color: #2670ac;
+    border-color: #1c3b74;
+}
+
+.add-protocol .target  .circle.selected {
+    background-color: #26ac42;
+    border-color:#1c7430;
+    cursor: pointer;
+}
+
+.add-protocol .target .circle.target-selected {
+    background-color: #2670ac;
+    border-color: #1c3b74;
+}
+
+
+.add-protocol .extra-input {
+    display: none;
+}
+
+.add-protocol .extra-input.display-extra {
+    display: block;
+}
+
+.add-protocol .has-error .invalid-feedback {
+    display: block;
+}
+
+.estimate {
+    margin-bottom: 0;
+}
+
+.estimate p {
+    margin-bottom: 0;
+    padding: 0px 15px;
+    color: rgba(0,0,0,.5);
+}
